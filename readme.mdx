@@ -1,0 +1,141 @@
+ {/* isTest && 
+       <div id="menu">
+       <p id='toc_version'>version : {version}</p>
+      <div>
+      <h3>PRIMAIRE</h3>
+      <button onClick={()=>{setSubject('francais');setLevel('primaire'); document.body.classList.add('primaire');}}>Français</button>
+      <button onClick={()=>{setSubject('mathematiques');setLevel('primaire'); document.body.classList.add('primaire');}} >Maths</button>
+      <button onClick={()=>{setSubject('anglais');setLevel('primaire'); document.body.classList.add('primaire');}}>Anglais</button>
+      <button onClick={()=>{setLevel('primaire'); document.body.classList.add('primaire');setGrade('CP')}} >CP</button>
+      <button onClick={()=>{setLevel('primaire');document.body.classList.add('primaire');setGrade('CE1')}} >CE1</button>
+      <button onClick={()=>{setLevel('primaire');document.body.classList.add('primaire');setGrade('CE2')}} >CE2</button>
+      <button onClick={()=>{setLevel('primaire');document.body.classList.add('primaire');setGrade('CM1')}} >CM1</button>
+      <button onClick={()=>{setLevel('primaire');document.body.classList.add('primaire');setGrade('CM2')}} >CM2</button>
+      </div>
+      <br/>
+      <div>
+      <h3>COLLEGE LYCÉE</h3>
+      <button onClick={()=>{setSubject('sciences&techno');setGrade('6');setLevel('college'); document.body.classList.remove('primaire')}} >Sciences&Techno6</button>
+      
+      <button onClick={()=>{setSubject('pc');setGrade('5');setLevel('college'); document.body.classList.remove('primaire')}} >PC5</button>
+      <button onClick={()=>{setSubject('pc');setGrade('4');setLevel('college'); document.body.classList.remove('primaire')}} >PC4</button>
+      <button onClick={()=>{setSubject('pc');setGrade('3');setLevel('college'); document.body.classList.remove('primaire')}} >PC3</button>
+      <button onClick={()=>{setSubject('pc');setGrade('2');setLevel('college'); document.body.classList.remove('primaire')}} >PC2</button>
+      <button onClick={()=>{setSubject('pc');setGrade('1');setLevel('college'); document.body.classList.remove('primaire')}} >PC1</button>
+      <button onClick={()=>{setSubject('pc');setGrade('TER');setLevel('college'); document.body.classList.remove('primaire')}} >PC TER</button>
+
+      <button onClick={()=>{setSubject('allemand');setGrade('2');setLevel('college'); document.body.classList.remove('primaire')}} >Allemand-2nde</button>
+
+      <button onClick={()=>{setSubject('anglais');setGrade('6');setLevel('college'); document.body.classList.remove('primaire')}} >Anglais-6e</button>
+      <button onClick={()=>{setSubject('anglais');setGrade('5');setLevel('college'); document.body.classList.remove('primaire')}} >Anglais-5e</button>
+      <button onClick={()=>{setSubject('anglais');setGrade('4');setLevel('college'); document.body.classList.remove('primaire')}} >Anglais-4e</button>
+      <button onClick={()=>{setSubject('anglais');setGrade('3');setLevel('college'); document.body.classList.remove('primaire')}} >Anglais-3e</button>
+      <button onClick={()=>{setSubject('anglais');setGrade('2');setLevel('college'); document.body.classList.remove('primaire')}} >Anglais-2nd</button>
+      <button onClick={()=>{setSubject('anglais');setGrade('1');setLevel('college'); document.body.classList.remove('primaire')}} >Anglais-1e</button>
+      <button onClick={()=>{setSubject('anglais');setGrade('TER');setLevel('college'); document.body.classList.remove('primaire')}} >Anglais-TER</button>
+      
+      <button onClick={()=>{setSubject('espagnol');setGrade('5');setLevel('college'); document.body.classList.remove('primaire')}} >Espagnol-5e</button>
+      <button onClick={()=>{setSubject('espagnol');setGrade('4');setLevel('college'); document.body.classList.remove('primaire')}} >Espagnol-4e</button>
+      <button onClick={()=>{setSubject('espagnol');setGrade('3');setLevel('college'); document.body.classList.remove('primaire')}} >Espagnol-3e</button>
+      <button onClick={()=>{setSubject('espagnol');setGrade('2');setLevel('college'); document.body.classList.remove('primaire')}} >Espagnol-2nd</button>
+      <button onClick={()=>{setSubject('espagnol');setGrade('1');setLevel('college'); document.body.classList.remove('primaire')}} >Espagnol-1ere</button>
+      <button onClick={()=>{setSubject('espagnol');setGrade('TER');setLevel('college'); document.body.classList.remove('primaire')}} >Espagnol-TER</button>
+     
+      <button onClick={()=>{setSubject('svt');setGrade('5');setLevel('college'); document.body.classList.remove('primaire')}} > SVT_5</button>
+      <button onClick={()=>{setSubject('svt');setGrade('4');setLevel('college'); document.body.classList.remove('primaire')}} > SVT_4</button>
+      <button onClick={()=>{setSubject('svt');setGrade('3');setLevel('college'); document.body.classList.remove('primaire')}} > SVT_3</button>
+      <button onClick={()=>{setSubject('svt');setGrade('2');setLevel('college'); document.body.classList.remove('primaire')}} > SVT_2</button>
+      <button onClick={()=>{setSubject('svt');setGrade('1');setLevel('college'); document.body.classList.remove('primaire')}} > SVT_1</button>
+      <button onClick={()=>{setSubject('svt');setGrade('TER');setLevel('college'); document.body.classList.remove('primaire')}} > SVT_TER</button>
+      <button onClick={()=>{setSubject('maths');setGrade('6');setLevel('college'); document.body.classList.remove('primaire')}} > MATHS_6</button>
+      <button onClick={()=>{setSubject('maths');setGrade('5');setLevel('college'); document.body.classList.remove('primaire')}} > MATHS_5</button>
+      <button onClick={()=>{setSubject('maths');setGrade('4');setLevel('college'); document.body.classList.remove('primaire')}} > MATHS_4</button>
+      <button onClick={()=>{setSubject('maths');setGrade('3');setLevel('college'); document.body.classList.remove('primaire')}} > MATHS_3</button>
+      <button onClick={()=>{setSubject('maths');setGrade('2');setLevel('college'); document.body.classList.remove('primaire')}} > MATHS_2</button>
+      <button onClick={()=>{setSubject('maths');setGrade('1');setLevel('college'); document.body.classList.remove('primaire')}} > MATHS_1</button>
+      <button onClick={()=>{setSubject('maths');setGrade('TER');setLevel('college'); document.body.classList.remove('primaire')}} > MATHS_TER</button>
+      <button onClick={()=>{setSubject('histoire');setGrade('6');setLevel('college'); document.body.classList.remove('primaire')}} > HISTOIRE_6</button>
+      <button onClick={()=>{setSubject('histoire');setGrade('5');setLevel('college'); document.body.classList.remove('primaire')}} > HISTOIRE_5</button>
+      <button onClick={()=>{setSubject('histoire');setGrade('4');setLevel('college'); document.body.classList.remove('primaire')}} >HISTOIRE_4</button>
+      <button onClick={()=>{setSubject('histoire');setGrade('3');setLevel('college'); document.body.classList.remove('primaire')}} > HISTOIRE_3</button>
+      <button onClick={()=>{setSubject('histoire');setGrade('2');setLevel('college'); document.body.classList.remove('primaire')}} > HISTOIRE_2</button>
+      <button onClick={()=>{setSubject('histoire');setGrade('1');setLevel('college'); document.body.classList.remove('primaire')}} > HISTOIRE_1</button>
+      <button onClick={()=>{setSubject('histoire');setGrade('TER');setLevel('college'); document.body.classList.remove('primaire')}} > HISTOIRE_TER</button>
+      <button onClick={()=>{setSubject('geographie');setGrade('6');setLevel('college'); document.body.classList.remove('primaire')}} > GEOGRAPHIE_6</button>
+      <button onClick={()=>{setSubject('geographie');setGrade('5');setLevel('college'); document.body.classList.remove('primaire')}} > GEOGRAPHIE_5</button>
+      <button onClick={()=>{setSubject('geographie');setGrade('4');setLevel('college'); document.body.classList.remove('primaire')}} >GEOGRAPHIE_4</button>
+      <button onClick={()=>{setSubject('geographie');setGrade('3');setLevel('college'); document.body.classList.remove('primaire')}} > GEOGRAPHIE_3</button>
+      <button onClick={()=>{setSubject('geographie');setGrade('2');setLevel('college'); document.body.classList.remove('primaire')}} > GEOGRAPHIE_2</button>
+      <button onClick={()=>{setSubject('geographie');setGrade('1');setLevel('college'); document.body.classList.remove('primaire')}} > GEOGRAPHIE_1</button>
+      <button onClick={()=>{setSubject('geographie');setGrade('TER');setLevel('college'); document.body.classList.remove('primaire')}} > GEOGRAPHIE_TER</button>
+
+      <button onClick={()=>{setSubject('francais');setGrade('6');setLevel('college'); document.body.classList.remove('primaire')}} > FRANÇAIS_6</button>
+      <button onClick={()=>{setSubject('francais');setGrade('5');setLevel('college'); document.body.classList.remove('primaire')}} > FRANÇAIS_5</button>
+      <button onClick={()=>{setSubject('francais');setGrade('4');setLevel('college'); document.body.classList.remove('primaire')}} >FRANÇAIS_4</button>
+      <button onClick={()=>{setSubject('francais');setGrade('3');setLevel('college'); document.body.classList.remove('primaire')}} > FRANÇAIS_3</button>
+      <button onClick={()=>{setSubject('francais');setGrade('2');setLevel('college'); document.body.classList.remove('primaire')}} > FRANÇAIS_2</button>
+      <button onClick={()=>{setSubject('francais');setGrade('1');setLevel('college'); document.body.classList.remove('primaire')}} > FRANÇAIS_1</button>
+
+      <button onClick={()=>{setSubject('techno');setGrade('5');setLevel('college'); document.body.classList.remove('primaire')}} > TECHNO_5</button>
+      <button onClick={()=>{setSubject('techno');setGrade('4');setLevel('college'); document.body.classList.remove('primaire')}} > TECHNO_4</button>
+      <button onClick={()=>{setSubject('techno');setGrade('3');setLevel('college'); document.body.classList.remove('primaire')}} >TECHNO_3</button>
+
+      <button onClick={()=>{setSubject('entrainement_bac_francais');setGrade('1');setLevel('college'); document.body.classList.remove('primaire')}} >ENTRAI_BAC_FR_1</button>
+      <button onClick={()=>{setSubject('entrainement_bac_hg');setGrade('TER');setLevel('college'); document.body.classList.remove('primaire')}} >ENTRAI_BAC_HIS_TER</button>
+      <button onClick={()=>{setSubject('entrainement_bac_maths');setGrade('TER');setLevel('college'); document.body.classList.remove('primaire')}} >ENTRAI_BAC_MATHS_TER</button>
+      <button onClick={()=>{setSubject('entrainement_bac_ses');setGrade('TER');setLevel('college'); document.body.classList.remove('primaire')}} >ENTRAI_BAC_SES_TER</button>
+      <button onClick={()=>{setSubject('entrainement_bac_svt');setGrade('TER');setLevel('college'); document.body.classList.remove('primaire')}} >ENTRAI_BAC_SVT_TER</button>
+      <button onClick={()=>{setSubject('entrainement_bac_philo');setGrade('TER');setLevel('college'); document.body.classList.remove('primaire')}} >ENTRAI_BAC_PHILO_TER</button>
+
+      <button onClick={()=>{setSubject('ses');setGrade('2');setLevel('college'); document.body.classList.remove('primaire')}} >SES 2</button>
+      <button onClick={()=>{setSubject('ses');setGrade('1');setLevel('college'); document.body.classList.remove('primaire')}} >SES 1</button>
+      <button onClick={()=>{setSubject('ses');setGrade('TER');setLevel('college'); document.body.classList.remove('primaire')}} >SES TER</button>
+
+      <button onClick={()=>{setSubject('philosophie');setGrade('TER');setLevel('college'); document.body.classList.remove('primaire')}} >PHILOSOPHIE TER</button>
+      <button onClick={switchBadge} >Switch badge</button>
+     </div>
+      <div>
+
+      <h3>Changer de layout</h3>
+     
+      <button onClick={()=>switchLayout('w900')} >Layout 900</button>
+      <button onClick={()=>switchLayout('w1200')} >Layout 1200</button>
+      <button onClick={()=>switchLayout('w1500')} >Layout 1500</button>
+      <button onClick={()=>switchLayout('w1800')} >Layout 1800</button>
+     <h3>Changer de cursus</h3>
+     
+   
+       <input onInput={(e)=>setinputVal(e.currentTarget.value)} placeholder="" value={inputVal}></input>
+         <button type="button" onClick={()=>{fetchCollection2(Number(inputVal))}}>charger le cursus</button>
+    </div>
+        
+  
+         
+
+      </div> 
+      
+      }*/}
+
+
+       /* 
+  
+
+  const switchBadge = () => {
+      const _badges = document.querySelectorAll('.badge_college_lycee');
+      _badges?.forEach((badge:any) => {
+        const _path = badge.getAttribute('src');
+        const _newPath = _path?.replace('_off', '_on');
+        if(_newPath) badge.setAttribute('src', _newPath);
+      })
+
+  }
+
+  const switchLayout = (val:string) => {
+    const app = document.getElementsByClassName('App')[0] as HTMLDivElement;
+    app?.classList?.remove("w900")
+    app?.classList?.remove("w1200")
+    app?.classList?.remove("w1500")
+    app?.classList?.remove("w1800")
+    app?.classList?.add(val)
+  }
+ */
