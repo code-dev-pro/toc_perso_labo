@@ -1,6 +1,6 @@
 # Custom toc labo fr
 
-## Add dependencies
+## Install dependencies
 
 ````text
 npm install
