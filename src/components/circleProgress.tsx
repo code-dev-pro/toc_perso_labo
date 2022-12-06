@@ -17,5 +17,4 @@ const CircleProgress = ({progress}:{progress:number}) => {
     </svg>
   );
 };
-
 export default CircleProgress;
