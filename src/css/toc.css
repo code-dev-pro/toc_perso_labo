@@ -572,6 +572,7 @@ body.primaire {
   position: relative;
   padding-left: 40px;
   padding-right: 40px;
+  padding-bottom: 40px;
   border-radius: var(--toc-radius-small);
   -webkit-border-radius: var(--toc-radius-small);
   -moz-border-radius: var(--toc-radius-small);
@@ -670,8 +671,8 @@ body.primaire {
   text-align: left;
   justify-content: flex-start;
   align-items: flex-start;
-  /*   width: calc(100% + 35px); */
   width: 100%;
+  margin-bottom: 20px;
 }
 .toc--layout-main--toc_title_chapters_type.wheel {
   flex-wrap: wrap;
@@ -686,7 +687,7 @@ body.primaire {
   align-items: center;
   justify-content: flex-end;
   top: 10px;
-  margin-bottom: 20px;
+  
 }
 .toc--layout-main_progress.badges {
   top: 0px;
@@ -831,6 +832,7 @@ body.primaire {
   grid-gap: 12px;
   gap: 12px;
   justify-content: space-around;
+ 
 }
 .primaire .toc--layout-main--toc_title_chapter_name {
   width: 110px;
@@ -916,6 +918,7 @@ body.primaire {
 
   .toc--layout-main--toc_title_chapters_type {
     width: 100% !important;
+  
   }
   .toc--bloc-toc {
     padding-left: 25px;
@@ -981,4 +984,10 @@ body.primaire {
 .App {
   text-align: center;
   overflow: hidden !important;
+}
+
+.toc--layout-main--toc_title_chapters_type .toc--layout-main_progress>div:first-child{
+  opacity: 0;
+  visibility: hidden;
+  width: 0;
 }

@@ -27,7 +27,7 @@ const TocRenderProgression = ({
           <span>{lesson.title}</span>
         </p>
       </div>
-      <GenerateWheel isAdaptive={isAdaptive} lesson={lesson} />
+    {  lesson.title.toLowerCase() === "ressources" || lesson.title.toLowerCase() === "prise en main de la plateforme" ? <></> : <GenerateWheel isAdaptive={isAdaptive} lesson={lesson} />}
     </div>
   );
 };
@@ -50,7 +50,7 @@ const GenerateWheel = ({
       }
     });
 
-    const _collectionLgt = _cumul; // datas.lessons.length;
+    const _collectionLgt = _cumul; 
 
     return Math.round(_total / _collectionLgt);
   };
