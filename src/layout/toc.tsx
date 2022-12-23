@@ -17,7 +17,7 @@ const TocRenderProgression = ({
     <div className="toc--layout-main--toc_title_chapters_type">
       <div className="toc--layout-main--toc_title_chapter_notion">
         <p
-          style={{ backgroundImage: `url(./assets/images/header.svg)` }}
+          
           className={`${
             lesson.title.toLowerCase() === "avant de commencer"
               ? "toc--layout-main--toc_title_chapter_notion_title part big"

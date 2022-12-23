@@ -41,3 +41,9 @@ The command message should be structured as follows:
 To make it easier, an interface will appear when commiting to create structured commit messages.
 
 > You can find the hook for running commitizen in `.husky/prepare-commit-msg`
+
+
+## Version : 0.1.1
+
+=> Correction l'affichage de pourcentage de progression totale
+=> Correction des header avec les titres (svg supprimé)

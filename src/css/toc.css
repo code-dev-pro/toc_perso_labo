@@ -45,6 +45,7 @@
   margin-left: 10px;
 }
 
+
 .App {
   margin: 20px auto;
   justify-content: center;
@@ -408,7 +409,7 @@ body.primaire {
   font-size: var(--toc-font-size-x-small);
 }
 .toc--sidebar-content-progression {
-  width: 230px;
+  width: 215px;
   position: relative;
   background-color: var(--toc-white);
 }
@@ -479,24 +480,28 @@ body.primaire {
 }
 .toc--layout-main--toc_title_chapter_notion_title.part {
   color: white;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 34px;
   width: auto;
-  text-align: center;
+  text-align: left;
   min-width: 130px;
-  padding-left: 30px;
-  padding-right: 30px;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 0 !important;
   margin-bottom: 0 !important;
   font-weight: bold;
+  background-color: var(--toc-purple-2);
+  margin-left: 0;
+  margin-right: 0;
+  border-top-right-radius: 15px;
+  max-width: 520px;
+  min-height: 30px;
+  padding: 10px!important;
+  overflow: hidden;
+  justify-content: flex-start;
+  align-items: center;
+  box-sizing: border-box;
+
 }
 .toc--layout-main--toc_title_chapter_notion_title.part span {
   position: relative;
-  top: 5px;
+
 }
 .toc--layout-main--toc_title_chapter_notion_title.part.big {
   width: auto;

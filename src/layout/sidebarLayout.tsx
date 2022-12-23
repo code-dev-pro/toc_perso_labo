@@ -224,7 +224,7 @@ const ScoreLayout = ({
               <div className="toc--sidebar-container-progression">
                 <Progression val={_totalProgress} />
               </div>
-              <div> {_totalProgress}%</div>
+              <div style={{width:"100%",textAlign:'center'}}> {_totalProgress}%</div>
             </div>
           </>
         )}
